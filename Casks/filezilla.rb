@@ -3,10 +3,13 @@ cask "filezilla" do
   sha256 "75a683af3338cc7ade56ddf865049c02f985c786b48bbd7a8616466c5cc3e6a6"
 
   url "https://download.filezilla-project.org/client/FileZilla_#{version}_macosx-x86.app.tar.bz2"
-  appcast "https://filezilla-project.org/versions.php?type=client"
   name "FileZilla"
   homepage "https://filezilla-project.org/"
 
+  livecheck do
+    skip "No version information available"
+  end
+  
   depends_on macos: ">= :high_sierra"
 
   app "FileZilla.app"
