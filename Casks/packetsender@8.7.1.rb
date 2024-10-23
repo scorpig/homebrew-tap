@@ -1,4 +1,4 @@
-cask "packetsender" do
+cask "packetsender@8.7.1" do
   version "8.7.1"
   sha256 "6ad44e1a1fff5bd1ff1d23036820d6859c4137a0efd0048718308bfa10bc9e98"
 
