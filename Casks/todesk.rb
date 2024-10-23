@@ -9,6 +9,10 @@ cask "todesk" do
   desc "Remote control software"
   homepage "https://www.todesk.com/"
 
+  livecheck do
+    skip "No version information available"
+  end
+  
   auto_updates true
 
   pkg "ToDesk_#{version}.pkg"
